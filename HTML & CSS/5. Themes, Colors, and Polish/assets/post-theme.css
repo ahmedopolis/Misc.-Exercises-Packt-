@@ -1,9 +1,11 @@
 .postid-11002 a {
   color: #a5dff2;
 }
+
 .postid-11002 a:visited {
   color: #c0a5f2;
 }
+
 .postid-11002 a:hover,
 .postid-11002 a:focus,
 .postid-11002 a:active {
@@ -11,15 +13,10 @@
 }
 
 .postid-11002 .content-area {
-  background: linear-gradient(
-    to bottom,
-    #222222 30%,
-    #333333 70%,
-    #666666 100%
-  );
+  background: linear-gradient(to bottom, #222222 30%, #333333 70%, #666666 100%);
   width: 100%;
-  float: none;
   padding: 0;
+  float: none;
   box-shadow: none;
   border: 10px solid #999;
 }

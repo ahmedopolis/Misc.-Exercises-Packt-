@@ -2,12 +2,9 @@ body {
   filter: invert(100%);
   background: #000000;
 }
-
 .content-area {
   box-shadow: none;
 }
-
-.blog .site-header,
-.single-post .site-header {
+.blog .site-header, .single-post .site-header {
   box-shadow: none;
 }
