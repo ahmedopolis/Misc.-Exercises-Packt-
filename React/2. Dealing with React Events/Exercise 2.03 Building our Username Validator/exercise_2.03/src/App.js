@@ -1,6 +1,4 @@
-import "./App.css";
 import React, { Component } from "react";
-
 class App extends Component {
   state = {
     username: "",
@@ -9,8 +7,10 @@ class App extends Component {
     email: "",
     errors: [],
   };
-  validateUsernameOnBlur = this.validateUsernameOnBlur.bind(this);
-
+  validateUsernameOnBlur = (event) => {
+    console.log("I should validate whatever is in ", event.target.value);
+    this.setState();
+  };
   displayForm() {
     return (
       <div>
@@ -27,17 +27,10 @@ class App extends Component {
       </div>
     );
   }
-
-  validateUsernameOnBlur(event) {
-    console.log("I should validate whatever is in ", event.target.value);
-    this.setState();
-  }
-
   submitForm(event) {
     console.log("Submitting the form now...");
     console.log(event);
   }
-
   render() {
     return (
       <div className="App">
@@ -48,5 +41,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
