@@ -1,6 +1,7 @@
-def format_customer(first, last, location = None):
-    full_name = '{} {}'.format(first, last)
+# My version
+def format_customer(*name, location = None):
+    full_name = f"{name[0]} {name[1]}"
     if location:
-        return '{} ({})'.format(full_name, location)
+        return f"{name[0]} {name[1]} {location}"
     else:
         return full_name
